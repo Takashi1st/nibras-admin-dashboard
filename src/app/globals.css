@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-cairo: 'Cairo', sans-serif;
+}
+
+body {
+  font-family: var(--font-cairo);
+  background-color: #0b0f19;
+  color: #dfe2f1;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+/* Subtle Golden and Emerald Radial Glows */
+.lux-glow-top {
+  background: radial-gradient(circle at 85% 10%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+}
+
+.lux-glow-bottom {
+  background: radial-gradient(circle at 15% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+}
+
+/* Custom Sleek Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e18;
+}
+::-webkit-scrollbar-thumb {
+  background: #262a35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
